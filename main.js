@@ -40,7 +40,7 @@ function writeAndCommitAmounts(amountsToSave) {
         const status = execSync('git status --porcelain').toString();
         if (status) {
             console.log(">> 检测到新变更，正在提交...");
-            execSync('git config --global user.email "igooorng@gmail.com"');
+            execSync('git config --global user.email "asix919@gmail.com"');
             execSync('git config --global user.name "GitHub Action Bot"');
             execSync('git commit -m "Update token amounts via script"');
             execSync("git push");
